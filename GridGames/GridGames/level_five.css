@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+
+  /* Style rows and columns */
+}
+.container > div{
+}
+#title {
+  grid-column-start: 1; /*this should span the entire page, look into using negative numbers in grid-column-end*/
+  grid-column-end: -1;
+}
+
+.friend , .cousin{
+  grid-row: span 1;
+  grid-column: span 1;
+  
+}
+
+.sibling{
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.aunt , .uncle{
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.grandparent{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+/* Style other types of family members below*/

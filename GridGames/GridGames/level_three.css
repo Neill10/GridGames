@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  grid-template-rows: repeat(2,1fr);
+  height: 200px;
+  width: 373px;
+}
+
+#grid-item-1 {
+    grid-column: span 2;
+}
+
+#grid-item-2 {
+
+}
+
+#grid-item-3 {
+
+}
+
+#grid-item-4 {
+    grid-column: span 2;
+}
